@@ -42,6 +42,6 @@ hotelRooms = [
  "beds": 4}
 ]
 
-@app.get("/rooms/")
+@app.get("/rooms")
 def get_rooms():
     return hotelRooms
