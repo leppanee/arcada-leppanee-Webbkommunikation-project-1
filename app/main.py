@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
-from fastapi.middleware.cors import CORSMiddleWare
-
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = ['*']
