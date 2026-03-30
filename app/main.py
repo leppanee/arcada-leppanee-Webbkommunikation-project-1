@@ -26,3 +26,22 @@ def read_item(item_id: int, q: str = None):
 def returnIP(request: Request):
     ip = request.client.host
     return {"ip": ip}
+
+hotelRooms = [
+{"roomNumber": 1,
+ "size": 1,
+ "beds": 2},
+{"roomNumber": 2,
+ "size": 3,
+ "beds": 16},
+{"roomNumber": 3,
+ "size": 1,
+ "beds": 2},
+{"roomNumber": 4,
+ "size": 2,
+ "beds": 4}
+]
+
+@app.get("/rooms/")
+def get_rooms():
+    return hotelRooms
